@@ -1,4 +1,4 @@
-# API Getting Started
+# LogCheck API: Getting Started
 
 ## Ruby
 - Email support to request API access
@@ -6,3 +6,5 @@
 - In the menu bar, select `Settings` in the drop down under your name
 - Select the API Tokens tab
 - Press the `Generate a new token` tab and MAKE SURE TO SAVE YOUR `TOKEN_ID` and `SECRET_KEY`
+- Save `TOKEN_ID` and `SECRET_KEY` in a `.env` file.
+- Run the `example.rb` script
