@@ -1,0 +1,49 @@
+ID	uuid	location	sort	title	type	unit	frequency	suspend_from	suspend_to	min	max	scale	depends_on_log	depends_on_value	note	help
+	9246562aad2947f4ad040610f6f8f5c3	Electrical Room A (187)	161	UPSA1 - Load (kW)	7	kW	8						log827541-type-of-rounds	1		
+	a3d2ba56c65f412fb3f3a15a0f13b5fc	Electrical Room A (187)	162	UPSA1 - Load (kVA)	7	kVA	8						log827541-type-of-rounds	1		
+	a7a6b10611a448c798e094ae42b8e388	Electrical Room A (187)	164	UPDA - kW	7	kW	8						log827541-type-of-rounds	1		
+	b3200ebd34674cc2b45f8d6b1499281b	Electrical Room A (187)	165	UPDA - kVA	7	kVA	8						log827541-type-of-rounds	1		
+	53b1ed970f72442d82fcd5a08179c6d8	Electrical Room A (187)	167	SWA - Load (kW)	7	kW	8						log827541-type-of-rounds	1		
+	6d7fa70f802f411a9ea208ed1d17ebf9	Electrical Room A (187)	168	SWA - Load (kVA)	7	kVA	8						log827541-type-of-rounds	1		
+	87befe67beb64eba94f3cb4f0173867b	Electrical Room A (187)	174	UPSA2 - kW	7	kW	8						log827541-type-of-rounds	1		
+	488337cd5baf4e5380b2844625179aa9	Electrical Room A (187)	175	UPSA2 - kVA	7	kVA	8						log827541-type-of-rounds	1		
+	fe6ad92c43244156b60cd24e14df539d	Electrical Room B (188)	40	UPSB1 - Load (kW)	7	kW	8						log827568-type-of-rounds	1		
+	09e315b67044402688fa7b72521f8322	Electrical Room B (188)	50	UPSB1 - Load (kVA)	7	kVA	8						log827568-type-of-rounds	1		
+	a4d3486314b149e09eb3717b9c3b421d	Electrical Room B (188)	80	UPDB - kW	7	kW	8						log827568-type-of-rounds	1		
+	cee912d8fa7a44c08f29c122cc688f8b	Electrical Room B (188)	90	UPDB - kVA	7	kVA	8						log827568-type-of-rounds	1		
+	93fa3ca64fab47abac3907bde34e98c6	Electrical Room B (188)	110	SWB - Load (kW)	7	kW	8						log827568-type-of-rounds	1		
+	19aefdddb2b94f6f8e49e0eefefe14e3	Electrical Room B (188)	120	SWB - Load (kVA)	7	kVA	8						log827568-type-of-rounds	1		
+	a77a16db6380466d8427832767975d15	Electrical Room B (188)	170	UPSB2 - kW	7	kW	8						log827568-type-of-rounds	1		
+	6b7d7651f53e4f04b6d93b8b0541fea4	Electrical Room B (188)	180	UPSB2 - kVA	7	kVA	8						log827568-type-of-rounds	1		
+	e74bffe907bf4089ad9351a712a380d9	Electrical Room C (189)	210	UPSC1 - Load (kW)	7	kW	8						log827592-type-of-rounds	1		
+	733cb0e5cc944160acb001924a28900b	Electrical Room C (189)	211	UPSC1 - Load (kVA)	7	kVA	8						log827592-type-of-rounds	1		
+	ab628d2ce6274553bbdf26f3e7827068	Electrical Room C (189)	213	UPDC - kW	7	kW	8						log827592-type-of-rounds	1		
+	3d6e4489c0ff481285efe18c5868c67d	Electrical Room C (189)	214	UPDC - kVA	7	kVA	8						log827592-type-of-rounds	1		
+	28cf61e002544ada98659033614bd4e3	Electrical Room C (189)	216	SWC - Load (kW)	7	kW	8						log827592-type-of-rounds	1		
+	0884334f9d8a4936b4f3bc2c886ed8a8	Electrical Room C (189)	217	SWC - Load (kVA)	7	kVA	8						log827592-type-of-rounds	1		
+	20187fc45a274c2b99ad6a2b9e201309	Electrical Room C (189)	222	UPSC2 - kW	7	kW	8						log827592-type-of-rounds	1		
+	86af36f15c454fa6a427908e91ae6875	Electrical Room C (189)	223	UPSC2 - kVA	7	kVA	8						log827592-type-of-rounds	1		
+	6205f66d9e824b63aab145252e3d1b10	Electrical Room D (190)	40	UPSD1 - Load (kW)	7	kW	8						log827616-type-of-rounds	1		
+	cabc2e042c0e4b52b183ad607e3c82fd	Electrical Room D (190)	50	UPSD1 - Load (kVA)	7	kVA	8						log827616-type-of-rounds	1		
+	e0bd1521e05c4c938d7b4becf7504657	Electrical Room D (190)	70	UPDD - kW	7	kW	8						log827616-type-of-rounds	1		
+	be3362ce5a87403998638be70b177326	Electrical Room D (190)	80	UPDD - kVA	7	kVA	8						log827616-type-of-rounds	1		
+	c3d2edd7bac041fe8116323c18196b73	Electrical Room D (190)	110	SWD - Load (kW)	7	kW	8						log827616-type-of-rounds	1		
+	084e584a230d4b2ab434c41b36946e31	Electrical Room D (190)	120	SWD - Load (kVA)	7	kVA	8						log827616-type-of-rounds	1		
+	1091348eb9d341b1947302b94ba99428	Electrical Room D (190)	170	UPSD2 - kW	7	kW	8						log827616-type-of-rounds	1		
+	932f10407c184915834dfb8ab3420851	Electrical Room D (190)	180	UPSD2 - kVA	7	kVA	8						log827616-type-of-rounds	1		
+	2f4457c11892477a97be41cd4571812a	Electrical Room F (191)	258	UPSF1 - Load (kW)	7	kW	8						log827640-type-of-rounds	1		
+	8ee8e4087c144e39a6db52eee9691d63	Electrical Room F (191)	259	UPSF1 - Load (kVA)	7	kVA	8						log827640-type-of-rounds	1		
+	504883c650f24930b266c876b92628a2	Electrical Room F (191)	261	UPDF - kW	7	kW	8						log827640-type-of-rounds	1		
+	168a5e5bfa3b42ed8f97f858b5b338f5	Electrical Room F (191)	262	UPDF - kVA	7	kVA	8						log827640-type-of-rounds	1		
+	732b37d5eba94b9e95cc487c8780083b	Electrical Room F (191)	264	SWF - Load (kW)	7	kW	8						log827640-type-of-rounds	1		
+	01424afc83844d2ab199ad1d931b5738	Electrical Room F (191)	265	SWF - Load (kVA)	7	kVA	8						log827640-type-of-rounds	1		
+	06a18ecfbcb745eb9d4d4af73b7d8736	Electrical Room F (191)	270	UPSF2 - kW	7	kW	8						log827640-type-of-rounds	1		
+	7af04d5184c2485ba146a66c44aae447	Electrical Room F (191)	271	UPSF2 - kVA	7	kVA	8						log827640-type-of-rounds	1		
+	7b4ea1332a8d4683b6d5fbaba3956e43	Electrical Room G (192)	282	UPSG1 - Load (kW)	7	kW	8						log827664-type-of-rounds	1		
+	046037bfd95a47c1b33c807ab70d6e53	Electrical Room G (192)	283	UPSG1 - Load (kVA)	7	kVA	8						log827664-type-of-rounds	1		
+	0b9cf6bb145643c487315ac32a72d906	Electrical Room G (192)	285	UPDG - kW	7	kW	8						log827664-type-of-rounds	1		
+	b235ad6bf15f494ebac01921b03f5b3a	Electrical Room G (192)	286	UPDG - kVA	7	kVA	8						log827664-type-of-rounds	1		
+	1e85e2d2cab042b991fc8417e8a2cc71	Electrical Room G (192)	291	SWG - Load (kW)	7	kW	8						log827664-type-of-rounds	1		
+	7aedbd6ef3f841f68080a9d26ce32e67	Electrical Room G (192)	293	SWG - Load (kVA)	7	kVA	8						log827664-type-of-rounds	1		
+	7610fe9cb26f40a88577ce04b777b287	Electrical Room G (192)	303	UPSG2 - kW	7	kW	8						log827664-type-of-rounds	1		
+	2bbdcd326f294a69a218ce9ce7eab19f	Electrical Room G (192)	305	UPSG2 - kVA	7	kVA	8						log827664-type-of-rounds	1		
