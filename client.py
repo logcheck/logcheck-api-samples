@@ -1,4 +1,4 @@
-from jsonapi_client import Session, Filter, ResourceTuple, Modifier
+from jsonapi_client import Session, Filter, ResourceTuple, Modifier, Inclusion
 
 import requests
 from requests.auth import HTTPBasicAuth
@@ -8,9 +8,7 @@ USER_NAME = os.getenv('USER_NAME')
 PASSWORD = os.getenv('PASSWORD')
 LOGCHECK_API_ENDPOINT = os.getenv('LOGCHECK_API_ENDPOINT')
 
-def get_logbook_records(logbook_id, published_since):
-  with Session(LOGCHECK_API_ENDPOINT,
-              request_kwargs=dict(auth=HTTPBasicAuth(USER_NAME, PASSWORD))) as s:
+def get_logbook_records(session, logbook_id, published_since):
 
     path = f'logbooks/{logbook_id}/records'
 
@@ -19,14 +17,22 @@ def get_logbook_records(logbook_id, published_since):
     # filter = Filter(published_since=published_since)
     modifier = Modifier(f'published_since={published_since}')
 
-    return s.get(path, modifier)
+    include = Inclusion('user', 'log')
 
-logbook_id = '2aafb79e4f364feebe6e92393a5aee3d'
-published_since = '2019-05-02T00:00:00Z'
+    return session.get(path, modifier + include)
 
-document = get_logbook_records(logbook_id, published_since)
+with Session(LOGCHECK_API_ENDPOINT,
+            request_kwargs=dict(auth=HTTPBasicAuth(USER_NAME, PASSWORD))) as s:
 
-for record in document.resources:
-  print(record)
-  print(record.id)
-  print(record.note)
+  logbook_id = '2aafb79e4f364feebe6e92393a5aee3d'
+  published_since = '2019-05-02T00:00:00Z'
+
+  document = get_logbook_records(s, logbook_id, published_since)
+
+  for record in document.resources:
+    print(record)
+    print(record.id)
+    print(record.note)
+    print(record.user)
+    print(record.user.name)
+    print(record.log.title)
