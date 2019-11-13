@@ -6,7 +6,7 @@ import os
 
 USER_NAME = os.getenv('USER_NAME')
 PASSWORD = os.getenv('PASSWORD')
-LOGCHECK_API_ENDPOINT = os.getenv('LOGCHECK_API_ENDPOINT')
+LOGCHECK_API_ENDPOINT = os.getenv('LOGCHECK_API_ENDPOINT') or 'https://www.logcheckapp.com/api/v1'
 
 def get_logbook_records(session, logbook_id, published_since):
 
