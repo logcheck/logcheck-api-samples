@@ -16,3 +16,12 @@ cd ruby
 bundle install
 ruby example.rb
 ```
+
+## Python
+
+```bash
+cd python
+pip install jsonapi-client
+source .env
+python3 client.py
+```
