@@ -25,14 +25,14 @@ with Session(LOGCHECK_API_ENDPOINT,
             request_kwargs=dict(auth=HTTPBasicAuth(USER_NAME, PASSWORD))) as s:
 
   logbook_id = '2aafb79e4f364feebe6e92393a5aee3d'
-  published_since = '2019-05-02T00:00:00Z'
+  published_since = '2019-10-31T00:00:00Z'
 
   document = get_logbook_records(s, logbook_id, published_since)
 
   for record in document.resources:
     print(record)
     print(record.id)
-    print(record.note)
+    print(record.value)
     print(record.user)
     print(record.user.name)
     print(record.log.title)
