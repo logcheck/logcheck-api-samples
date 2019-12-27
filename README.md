@@ -54,10 +54,10 @@ ruby example.rb
 
 ## Example Usage: Python
 
-**Prerequisites**: [python3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installing/)
+**Prerequisites**: [python3](https://www.python.org/downloads/) and [pip3](https://pip.pypa.io/en/stable/installing/)
 
 ```bash
 cd python/
-pip install jsonapi-client
+pip3 install jsonapi-client
 python3 client.py
 ```
