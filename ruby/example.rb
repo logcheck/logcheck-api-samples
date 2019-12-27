@@ -5,10 +5,10 @@ require 'rest-client'
 require 'base64'
 require 'json'
 
-API_BASE_URI = ENV['API_BASE_URI']
+LOGCHECK_API_ENDPOINT = ENV['LOGCHECK_API_ENDPOINT'] || 'https://www.logcheckapp.com/api/v1'
 
-USER_NAME = ENV['TOKEN_ID']
-PASSWORD = ENV['SECRET_KEY']
+TOKEN_ID = ENV['TOKEN_ID']
+SECRET_KEY = ENV['SECRET_KEY']
 
 def print_response(json_response)
   json_response['data'].each do |record|
@@ -28,12 +28,12 @@ end
 # Setup
 log_uuid = '762816f4e1354f0fa3dcdf7ab26b059b'
 records_path = "logs/#{log_uuid}/records"
-request_uri = "#{API_BASE_URI}/#{records_path}"
+request_uri = "#{LOGCHECK_API_ENDPOINT}/#{records_path}"
 
 # Make the request
 response = RestClient.get request_uri, {
   params: { published_since: '2019-05-02T00:00:00Z' },
-  Authorization: "Basic #{::Base64.strict_encode64("#{USER_NAME}:#{PASSWORD}")}"
+  Authorization: "Basic #{::Base64.strict_encode64("#{TOKEN_ID}:#{SECRET_KEY}")}"
 }
 
 # Print the response
