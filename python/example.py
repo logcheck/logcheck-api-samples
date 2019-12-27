@@ -28,7 +28,6 @@ with Session(LOGCHECK_API_ENDPOINT,
   published_since = '2019-10-31T00:00:00Z'
   document = get_logbook_records(s, logbook_id, published_since)
 
-
   for record in document.resources:
     print(record)
     print(record.id)
