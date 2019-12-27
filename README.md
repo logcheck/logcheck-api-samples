@@ -7,7 +7,7 @@
 
 ## Getting Started
 
-### 0. Generate credentials
+### 1. Generate credentials
 - Email support to request API access
 - Log in to the website [https://www.logcheckapp.com](https://www.logcheckapp.com/login)
 - In the drop down under your name, select `Settings`
@@ -15,7 +15,7 @@
 - Select the `Generate a new token` button
 - Leave the resulting page open until **step 2**
 
-### 1. Clone this repo
+### 2. Clone this repo
 
 From your shell:
 
@@ -25,7 +25,7 @@ git clone git@github.com:logcheck/logcheck-api-samples.git
 cd logcheck-api-samples
 ```
 
-### 2. Set up environment
+### 3. Set up environment
 - Set `TOKEN_ID` and `SECRET_KEY` from **step 0** as environment variables
 
 ```sh
