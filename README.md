@@ -30,17 +30,18 @@ and a LogCheck team member will help you get started.
 - A modal will open showing a new `TOKEN_ID` and `SECRET_KEY`
 
 ### 4. Set up environment
-- Set `TOKEN_ID` and `SECRET_KEY` as environment variables
+- Copy `TOKEN_ID` and `SECRET_KEY` into a `.env` file
 
 ```sh
 touch .env
 echo "export TOKEN_ID='<paste TOKEN_ID>'" >> .env
 echo "export SECRET_KEY='<paste SECRET_KEY>'" >> .env
-source .env
 ```
 
-Note that you will need to `source .env` again on subsequent shell
-sessions.
+Note that the included ruby and python example scripts use the
+[dotenv](https://github.com/bkeepers/dotenv) and
+[python-dotenv](https://pypi.org/project/python-dotenv/) packages respectively
+to access these environment variables.
 
 Please also note that this repo contains a `.gitignore` file which excludes
 `.env` from source control. Be sure to add this file to your
