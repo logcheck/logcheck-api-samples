@@ -33,17 +33,17 @@ and a LogCheck team member will help you get started.
 - Set `TOKEN_ID` and `SECRET_KEY` as environment variables
 
 ```sh
-touch credentials.env
-echo "export TOKEN_ID='<paste TOKEN_ID>'" >> credentials.env
-echo "export SECRET_KEY='<paste SECRET_KEY>'" >> credentials.env
-source credentials.env
+touch .env
+echo "export TOKEN_ID='<paste TOKEN_ID>'" >> .env
+echo "export SECRET_KEY='<paste SECRET_KEY>'" >> .env
+source .env
 ```
 
-Note that you will need to `source credentials.env` again on subsequent shell
+Note that you will need to `source .env` again on subsequent shell
 sessions.
 
 Please also note that this repo contains a `.gitignore` file which excludes
-`credentials.env` from source control. Be sure to add this file to your
+`.env` from source control. Be sure to add this file to your
 own future repos to avoid leaking your LogCheck API credentials.
 
 ## Example Usage: Ruby
@@ -52,6 +52,7 @@ own future repos to avoid leaking your LogCheck API credentials.
 
 ```bash
 cd ruby/
+gem install bundler # if not already installed
 bundle install
 ruby example.rb
 ```
@@ -62,6 +63,6 @@ ruby example.rb
 
 ```bash
 cd python/
-pip3 install jsonapi-client
-python3 client.py
+pip3 install jsonapi-client python-dotenv
+python3 example.py
 ```

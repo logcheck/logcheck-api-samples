@@ -1,9 +1,12 @@
 # frozen_string_literal: true
-require 'dotenv/load'
+require 'dotenv'
 require 'pry'
 require 'rest-client'
 require 'base64'
 require 'json'
+
+# Load environment variables from common .env file in root of project
+Dotenv.load('../.env')
 
 LOGCHECK_API_ENDPOINT = ENV['LOGCHECK_API_ENDPOINT'] || 'https://www.logcheckapp.com/api/v1'
 
